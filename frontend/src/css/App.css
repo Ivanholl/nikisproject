@@ -4,32 +4,59 @@
 body .App-logo {
   height: 6vmin;
   pointer-events: none;
-  margin: 1rem 0; }
+  margin: 4vh 22vh; }
 
 body .App-header {
-  background-color: #282c34;
-  min-height: 10vh; }
-  body .App-header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    font-size: calc(10px + 2vmin);
-    color: white; }
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9; }
   body .App-header .nav {
-    padding: 1rem 0; }
+    padding: 1rem; }
 
 body .khTpiN {
   min-height: 100vh; }
+  body .khTpiN h1 {
+    color: #fff;
+    text-align: left;
+    font-size: calc(14px + 2vmin);
+    line-height: calc(16px + 3vmin);
+    text-transform: uppercase;
+    margin: 0 0vh 10vh;
+    padding: 0 25vh 0 6vh; }
 
 body .fyHTpc {
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-box-pack: start;
+  -webkit-justify-content: left;
+  justify-content: left;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end; }
 
 body .App-link {
   color: #61dafb; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+body .box-contents {
+  margin: 4vh 22vh;
+  display: flex; }
+  body .box-contents .box {
+    background-color: #0b8289;
+    width: 23vh;
+    height: 37vh;
+    margin: 1rem;
+    border-top: 3px solid #f15d53;
+    opacity: 0.7; }
+    body .box-contents .box img {
+      padding: 3rem 3rem 1rem; }
+    body .box-contents .box p {
+      color: #fff; }
