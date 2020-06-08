@@ -1,11 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/Logo-proakt.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
 import { Nav } from 'react-bootstrap';
+import FirstSlide from './components/FirstSlide.js'
+
 
 function App() {
     return (<div className="App">
         <header className="App-header">
+            <div className="container">
+            <img src={logo} className="App-logo" alt="logo" />
             <Nav
                 activeKey="/home"
                 onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
@@ -22,10 +27,12 @@ function App() {
                 <Nav.Item>
                     <Nav.Link eventKey="disabled" disabled>
                         Disabled
-    </Nav.Link>
+             </Nav.Link>
                 </Nav.Item>
-            </Nav>
+                </Nav>
+                </div>
         </header>
+        <FirstSlide></FirstSlide>
     </div>);
 }
 
