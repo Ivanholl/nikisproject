@@ -1,7 +1,4 @@
 ﻿import React, { useState  } from 'react';
-import LazyHero from 'react-lazy-hero';
-import firstBackground from '../images/slide1-background.png';
-import {Row} from 'react-bootstrap';
 import {Container} from 'react-bootstrap';
 
 import InfoBox from './InfoBox.js';
@@ -30,11 +27,8 @@ export default function FirstSlide() {
 
     return (
         <div className="firstSlide" >
-            <LazyHero imageSrc={firstBackground}>
                 <Container>
-                    <Row>
                         <h1>Винаги давай на света и на хората около теб най-доброто, което можеш и имаш… въпреки всичко!</h1>
-                    </Row>
                 </Container>
                 <div className="box-contents">
                 {
@@ -43,7 +37,6 @@ export default function FirstSlide() {
                     })
                 }
                 </div>
-            </LazyHero>
         </div>
     );
 
