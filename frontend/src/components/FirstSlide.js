@@ -41,18 +41,3 @@ export default function FirstSlide() {
     );
 
 }
-
-
-
-
-
-
-/*
-
-
-
-['', '', 'Accounting _icon3.png', 'Accounting _icon4.png', 'Accounting _icon5.png', 'Accounting _icon6.png']
-
-
-['', '', '', '', '', '']
-*/

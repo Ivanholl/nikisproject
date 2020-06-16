@@ -4,31 +4,24 @@
             transform: rotate(0deg);
             top: 0px;
         }
-
         15% {
             top: 2px;
         }
-
         30% {
             transform: rotate(1.5deg);
         }
-
         45% {
             top: 0px;
         }
-
         60% {
             transform: rotate(-1.5deg);
         }
-
         75% {
             top: 2px;
         }
-
         90% {
             transform: rotate(2.5deg);
         }
-
         100% {
             transform: rotate(0deg);
             top: 0px;
@@ -107,4 +100,3 @@
     }
 }
 /* Bounce To Bottom */
-
