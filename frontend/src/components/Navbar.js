@@ -1,25 +1,27 @@
-import React from 'react';
+﻿import React from 'react';
 import { Nav } from 'react-bootstrap';
 
 import logo from '../images/Logo-proakt.png';
 
 export default function Navbar(props) {
     return (<header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <a href="/"><img src={logo} className="App-logo" alt="logo" /></a>
         <Nav activeKey="/home" >
             <Nav.Item>
-                <Nav.Link href="/home">Active</Nav.Link>
+                <Nav.Link href="#about">За Нас</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
+                <Nav.Link href="#services" eventKey="link-1">Услуги</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
+                <Nav.Link href="#jobs" eventKey="link-2">Кариери</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="link-3">Link</Nav.Link>
+                <Nav.Link href="#contacts" eventKey="link-3">Контакти</Nav.Link>
             </Nav.Item>
-
+            <Nav.Item>
+                <Nav.Link eventKey="link-4">Комуникатор</Nav.Link>
+            </Nav.Item>
             </Nav>
     </header>);
 }
