@@ -29,6 +29,21 @@
         transition: 0.6s;
         background-color: #030a2b;
         text-align: center;
+
+        .back-to-top {
+            &:focus {
+                outline: none;
+            }
+
+            img {
+                -webkit-animation: mover 0.8s infinite alternate;
+                animation: mover 0.8s infinite alternate;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -143,7 +158,7 @@
                         justify-content: flex-end;
 
                         span {
-                            color: #3b8c84;
+                            color: #0fb6b7;
                             font-size: calc(12px + 2vmin);
                         }
                     }
@@ -323,5 +338,24 @@
                 }
             }
         }
+    }
+}
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
     }
 }

@@ -19,6 +19,13 @@
     transition: 0.6s;
     background-color: #030a2b;
     text-align: center; }
+    body .App .back-to-top:focus {
+      outline: none; }
+    body .App .back-to-top img {
+      -webkit-animation: mover 0.8s infinite alternate;
+      animation: mover 0.8s infinite alternate; }
+      body .App .back-to-top img:focus {
+        outline: none; }
   body .App-header {
     min-height: 10vh;
     width: 100vw;
@@ -96,7 +103,7 @@
           flex-direction: column;
           justify-content: flex-end; }
           body .secondSlide .container .about-text .left-side p span {
-            color: #3b8c84;
+            color: #0fb6b7;
             font-size: calc(12px + 2vmin); }
     body .secondSlide p {
       color: #fff;
@@ -208,3 +215,15 @@
           padding: 0.5vw 3vw; }
           body .fifthSlide .contact-info .right-side .btn-success:hover {
             background-color: #53c1a9; }
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-20px); } }
+
+@keyframes mover {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-20px); } }

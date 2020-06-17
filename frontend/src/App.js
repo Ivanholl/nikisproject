@@ -1,5 +1,7 @@
 import React from 'react';
+import BackToTop from "react-back-to-top-button";
 
+import BackToTopBtn from './images/back-to-top-btn.png'
 import './css/App.css';
 import './css/animations.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,6 +21,14 @@ function App() {
         <ThirdSlide />
         <FourthSlide />
         <FifthSlide />
+        <BackToTop
+            showOnScrollUp
+            showAt={100}
+            speed={1500}
+            easing="easeInOutQuint"
+        >
+            <img src={BackToTopBtn} />
+        </BackToTop>
     </div>);
 }
 
