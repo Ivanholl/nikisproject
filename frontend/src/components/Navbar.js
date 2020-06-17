@@ -26,8 +26,8 @@ export default function Navbar(props) {
                     <Nav.Link eventKey="link-4">Комуникатор</Nav.Link>
                 </Nav.Item>
             </div>
-            <div className="social">
-
+            <div className="lang">
+                <p><a href="#">BG</a></p>
             </div>
             </Nav>
     </header>);

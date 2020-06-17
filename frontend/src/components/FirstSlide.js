@@ -1,5 +1,4 @@
 ﻿import React, { useState  } from 'react';
-import {Container} from 'react-bootstrap';
 
 import InfoBox from './InfoBox.js';
 
@@ -27,9 +26,7 @@ export default function FirstSlide() {
 
     return (
         <div className="firstSlide" >
-                <Container>
-                        <h1>Винаги давай на света и на хората около теб най-доброто, което можеш и имаш… въпреки всичко!</h1>
-                </Container>
+                <h1>ВИНАГИ ДАВАЙ НА СВЕТА И ХОРАТА ОКОЛО ТЕБ НАЙ-ДОБРОТО, КОЕТО МОЖЕШ И ИМАШ...ВЪПРЕКИ ВСИЧКО!</h1>
                 <div className="box-contents">
                 {
                     infos.map((item, index) => {

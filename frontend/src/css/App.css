@@ -13,31 +13,45 @@
     color: #fff; }
     body a:hover, body a:active, body a:focus {
       color: #0fb6b7;
-      transition: 0.6s; }
+      transition: 0.6s;
+      text-decoration: none; }
   body .App {
+    transition: 0.6s;
     background-color: #030a2b;
     text-align: center; }
-  body .App-logo {
-    height: 6vmin;
-    pointer-events: none;
-    margin: 4vh 22vh; }
   body .App-header {
     min-height: 10vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(12px + 1vmin);
     color: white;
+    padding: 0 10vw;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9; }
+    body .App-header .App-logo {
+      height: 6vmin;
+      pointer-events: none;
+      margin: 4vh 0; }
     body .App-header .nav {
       padding: 1rem; }
       body .App-header .nav .main-menu {
         display: flex; }
+      body .App-header .nav .outsorce .nav-item {
+        transition: 0.6s;
+        border: 1px solid #53c1a9; }
+        body .App-header .nav .outsorce .nav-item:hover {
+          background: #53c1a9; }
+        body .App-header .nav .outsorce .nav-item a:hover {
+          color: #fff; }
+      body .App-header .nav .lang p {
+        vertical-align: middle;
+        padding: 0.5vw 0 0 1vw;
+        cursor: pointer; }
   body .firstSlide {
     display: flex;
     flex-direction: column;
@@ -54,9 +68,8 @@
       text-align: left;
       font-size: calc(14px + 2vmin);
       line-height: calc(16px + 3vmin);
-      text-transform: uppercase;
-      margin: 0 -5vw 6vw;
-      padding: 0 25vw 0 6vw; }
+      margin: 0 0vw 3vw;
+      padding: 0 38vw 0 15vw; }
   body .secondSlide {
     display: flex;
     flex-direction: column;
@@ -99,6 +112,11 @@
     -webkit-justify-content: flex-start;
     background: #030a2b;
     padding: 10vh 0; }
+    body .thirdSlide .box-contents {
+      margin: 10vw 0; }
+      body .thirdSlide .box-contents .box {
+        width: 22vw;
+        margin-bottom: 3vw; }
   body .fourthSlide {
     display: flex;
     flex-direction: row;
@@ -120,15 +138,14 @@
   body .App-link {
     color: #61dafb; }
   body .box-contents {
-    margin: 4vh 20vh;
+    margin: 4vw 10vw;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap; }
     body .box-contents .box {
       background-color: #0b8289;
-      width: 10vw;
-      margin: 1rem;
+      width: 11vw;
       border-top: 3px solid #f15d53;
       opacity: 0.7;
       cursor: pointer;
@@ -143,29 +160,51 @@
     width: 100vw;
     color: #FFFFFF;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10vh 0; }
-    body .fifthSlide .left-side {
-      width: 40%;
+    body .fifthSlide .contact-info {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      text-align: left; }
-      body .fifthSlide .left-side .phones {
-        text-align: right; }
-    body .fifthSlide .right-side {
-      width: 40%;
-      text-align: left; }
-      body .fifthSlide .right-side input,
-      body .fifthSlide .right-side textarea {
-        border: none;
-        border-bottom: 2px solid #0a7985;
-        border-radius: 0;
-        background: transparent;
-        color: #ffffff;
-        resize: none; }
-        body .fifthSlide .right-side input:focus,
-        body .fifthSlide .right-side textarea:focus {
-          box-shadow: none;
-          border-color: #ffffff; }
+      justify-content: space-between; }
+      body .fifthSlide .contact-info .contact-map {
+        width: 40%; }
+        body .fifthSlide .contact-info .contact-map .left-side {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          text-align: left; }
+          body .fifthSlide .contact-info .contact-map .left-side .phones {
+            text-align: right; }
+        body .fifthSlide .contact-info .contact-map .map-component {
+          width: 65%;
+          margin-top: 4vw; }
+          body .fifthSlide .contact-info .contact-map .map-component p {
+            text-align: left; }
+      body .fifthSlide .contact-info .right-side {
+        width: 40%;
+        text-align: left; }
+        body .fifthSlide .contact-info .right-side p {
+          font-size: calc(10px + 2vmin);
+          margin-bottom: 2vw; }
+        body .fifthSlide .contact-info .right-side input,
+        body .fifthSlide .contact-info .right-side textarea {
+          border: none;
+          border-bottom: 2px solid #0a7985;
+          border-radius: 0;
+          background: transparent;
+          color: #ffffff;
+          resize: none; }
+          body .fifthSlide .contact-info .right-side input:focus,
+          body .fifthSlide .contact-info .right-side textarea:focus {
+            box-shadow: none;
+            border-color: #ffffff; }
+        body .fifthSlide .contact-info .right-side .btn-success {
+          color: #fff;
+          background-color: transparent;
+          border-color: #53c1a9;
+          border-radius: 0;
+          transition: 0.6s;
+          padding: 0.5vw 3vw; }
+          body .fifthSlide .contact-info .right-side .btn-success:hover {
+            background-color: #53c1a9; }

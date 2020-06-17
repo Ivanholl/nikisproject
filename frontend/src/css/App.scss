@@ -21,18 +21,14 @@
         &:hover, &:active, &:focus {
             color: #0fb6b7;
             transition: 0.6s;
+            text-decoration: none;
         }
     }
 
     .App {
+        transition: 0.6s;
         background-color: #030a2b;
         text-align: center;
-    }
-
-    .App-logo {
-        height: 6vmin;
-        pointer-events: none;
-        margin: 4vh 22vh;
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -43,23 +39,53 @@
 
     .App-header {
         min-height: 10vh;
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        font-size: calc(10px + 2vmin);
+        font-size: calc(12px + 1vmin);
         color: white;
+        padding: 0 10vw;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 9;
+
+        .App-logo {
+            height: 6vmin;
+            pointer-events: none;
+            margin: 4vh 0;
+        }
 
         .nav {
             padding: 1rem;
 
             .main-menu {
                 display: flex;
+            }
+
+            .outsorce {
+                .nav-item {
+                    transition: 0.6s;
+                    border: 1px solid #53c1a9;
+
+                    &:hover {
+                        background: #53c1a9;
+                    }
+
+                    a {
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .lang p {
+                vertical-align: middle;
+                padding: 0.5vw 0 0 1vw;
+                cursor: pointer;
             }
         }
     }
@@ -81,9 +107,8 @@
             text-align: left;
             font-size: calc(14px + 2vmin);
             line-height: calc(16px + 3vmin);
-            text-transform: uppercase;
-            margin: 0 -5vw 6vw;
-            padding: 0 25vw 0 6vw;
+            margin: 0 0vw 3vw;
+            padding: 0 38vw 0 15vw;
         }
     }
 
@@ -147,6 +172,15 @@
         -webkit-justify-content: flex-start;
         background: #030a2b;
         padding: 10vh 0;
+
+        .box-contents {
+            margin: 10vw 0;
+
+            .box {
+                width: 22vw;
+                margin-bottom: 3vw;
+            }
+        }
     }
 
     .fourthSlide {
@@ -183,17 +217,16 @@
     //  }
     // }
     .box-contents {
-        margin: 4vh 20vh;
+        margin: 4vw 10vw;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
 
 
         .box {
             background-color: #0b8289;
-            width: 10vw;
-            margin: 1rem;
+            width: 11vw;
             border-top: 3px solid #f15d53;
             opacity: 0.7;
             cursor: pointer;
@@ -215,41 +248,78 @@
         width: 100vw;
         color: #FFFFFF;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 10vh 0;
 
-        .left-side {
-            width: 40%;
+        .contact-info {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            text-align: left;
 
-            .adress {
+
+            .contact-map {
+                width: 40%;
+
+                .left-side {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    text-align: left;
+
+                    .adress {
+                    }
+
+                    .phones {
+                        text-align: right;
+                    }
+                }
+
+                .map-component {
+                    width: 65%;
+                    margin-top: 4vw;
+
+                    p {
+                        text-align: left;
+                    }
+                }
             }
 
-            .phones {
-                text-align: right;
-            }
-        }
+            .right-side {
+                width: 40%;
+                text-align: left;
 
-        .right-side {
-            width: 40%;
-            text-align: left;
+                p {
+                    font-size: calc(10px + 2vmin);
+                    margin-bottom: 2vw;
+                }
 
-            input,
-            textarea {
-                border: none;
-                border-bottom: 2px solid #0a7985;
-                border-radius: 0;
-                background: transparent;
-                color: #ffffff;
-                resize: none;
+                input,
+                textarea {
+                    border: none;
+                    border-bottom: 2px solid #0a7985;
+                    border-radius: 0;
+                    background: transparent;
+                    color: #ffffff;
+                    resize: none;
 
-                &:focus {
-                    box-shadow: none;
-                    border-color: #ffffff //for animations
+                    &:focus {
+                        box-shadow: none;
+                        border-color: #ffffff //for animations
+                    }
+                }
+
+                .btn-success {
+                    color: #fff;
+                    background-color: transparent;
+                    border-color: #53c1a9;
+                    border-radius: 0;
+                    transition: 0.6s;
+                    padding: 0.5vw 3vw;
+
+                    &:hover {
+                        background-color: #53c1a9;
+                    }
                 }
             }
         }

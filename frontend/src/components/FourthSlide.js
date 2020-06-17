@@ -7,7 +7,7 @@ export default function FourthSlide() {
         <div id="jobs" className="fourthSlide" >
                 <Container>
                 <h2>КАРИЕРИ</h2>
-                <p>Вижте обявите за работа на www.jobs.bg или се свържете с <a href="#contacts">нас</a>.</p>
+                <p>Вижте обявите за работа на <a href="https://www.jobs.bg/company/19480">www.jobs.bg</a> или се свържете с <a href="#contacts">нас</a>.</p>
                 </Container>
             </div>
     );

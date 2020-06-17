@@ -4,6 +4,7 @@ import { Form, Button } from 'react-bootstrap';
 export default function ContactForm() {
     return (
         <Form>
+            <p>Свържете се с нас:</p>
             <Form.Group>
                 <Form.Label>Име</Form.Label>
                 <Form.Control type="email"/>
@@ -21,7 +22,7 @@ export default function ContactForm() {
                 <Form.Control as="textarea" rows="3" />
             </Form.Group>
             <Button variant="success" type="submit">
-                Submit
+                ИЗПРАТИ
             </Button>
         </Form>
     )
