@@ -4,10 +4,10 @@ import { Container } from 'react-bootstrap';
 import ContactForm from './ContactForm';
 
 export default function FifthSlide() {
-    const [adress, setAdress] = useState(dummyAdress)
+    const [adress] = useState(dummyAdress)
 
     return (
-        <Container className="fifthSlide">
+        <Container id="contacts" className="fifthSlide">
             <div className="left-side">
                 <div className="adress">
                     <h3>контакти</h3>

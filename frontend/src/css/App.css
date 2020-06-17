@@ -23,6 +23,8 @@
     z-index: 9; }
     body .App-header .nav {
       padding: 1rem; }
+      body .App-header .nav .main-menu {
+        display: flex; }
   body .firstSlide {
     display: flex;
     flex-direction: column;

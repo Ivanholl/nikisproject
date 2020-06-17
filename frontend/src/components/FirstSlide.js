@@ -5,7 +5,7 @@ import InfoBox from './InfoBox.js';
 
 export default function FirstSlide() {
 
-    const [infos, setinfos] = useState([{
+    const [infos] = useState([{
         image: 'Accounting _icon1.png',
         text: 'Счетоводно обслужване'
     },{
