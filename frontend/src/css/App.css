@@ -1,5 +1,5 @@
 ﻿body {
-  background-color: #030a2b;
+  background-color: #030a2b !important;
   transition: 0.6s; }
   body h2 {
     color: #fff;

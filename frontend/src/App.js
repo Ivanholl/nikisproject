@@ -1,7 +1,8 @@
 import React from 'react';
 import BackToTop from "react-back-to-top-button";
-
 import BackToTopBtn from './images/back-to-top-btn.png'
+import { FullPage, Slide } from 'react-full-page';
+
 import './css/App.css';
 import './css/animations.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,11 +17,23 @@ import Navbar from './components/Navbar.js';
 function App() {
     return (<div className="App">
         <Navbar />
-        <FirstSlide />
-        <SecondSlide />
-        <ThirdSlide />
-        <FourthSlide />
-        <FifthSlide />
+        <FullPage>
+            <Slide>
+                <FirstSlide />
+            </Slide>
+            <Slide>
+                <SecondSlide />
+            </Slide>
+            <Slide>
+                <ThirdSlide />
+            </Slide>
+            <Slide>
+                <FourthSlide />
+            </Slide>
+            <Slide>
+                <FifthSlide />
+             </Slide>
+        </FullPage>
         <BackToTop
             showOnScrollUp
             showAt={100}
