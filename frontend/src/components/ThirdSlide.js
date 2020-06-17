@@ -6,7 +6,7 @@ export default function ThirdSlide() {
     return (
         <div id="services" className="thirdSlide" >
                 <Container>
-                        <h1>ЗА <span>НАС</span></h1>
+                        <h2>УСЛУГИ</h2>
                 </Container>
             </div>
     );
