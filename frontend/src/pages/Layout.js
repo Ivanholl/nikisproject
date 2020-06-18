@@ -9,7 +9,7 @@ import FifthSlide from './FifthSlide';
 
 export default function Layout () {
     return (
-        <FullPage>
+        <FullPage initialSlide={0}>
             <Slide>
                 <FirstSlide />
             </Slide>

@@ -1,16 +1,15 @@
 $mediaAverageScreen: 1600px;
 $mediaDesktop: 1280px;
 $mediaTablet: 960px;
-$mediaMobile: 480px;
+$mediaMobile: 640;
 
 
-@media (min-width: $mediaDesktop) and (max-width: $mediaAverageScreen) {
+@media (max-width: $mediaAverageScreen) {
     body .thirdSlide .box-contents .box {
         width: 20vw;
     }
 }
-
-@media (min-width: $mediaTablet) and (max-width: $mediaDesktop) {
+@media (max-width: $mediaDesktop) {
     body .App-header {
         padding: 2vw 5vw;
 
@@ -46,7 +45,6 @@ $mediaMobile: 480px;
             }
         }
     }
-
     body .secondSlide {
         padding: 3vw 0;
 
@@ -67,13 +65,108 @@ $mediaMobile: 480px;
             }
         }
     }
-
     body .thirdSlide {
         .box-contents {
             padding-top: 5vw;
             .box {
                 // width: 23vw;
                 width: 21.2vw;
+            }
+        }
+    }
+    body .back-to-top {
+        margin: 2.5vw;
+    }
+}
+
+@media (max-width: $mediaTablet) {
+    body .App-header {
+        .App-logo {
+            margin: 1vh 0;
+            height: 3.5vmin;
+        }
+        .nav {
+            padding: .1rem .5rem;
+            font-size: 1rem;
+            .nav-link {
+                padding: .1rem .4rem;
+            }
+        }
+    }
+    body .firstSlide {
+        background-position: initial;
+        background-size: 100vw;
+        background-color: #000116;
+
+        h1 {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            padding: 0 28vw 0 10vw;
+        }
+        .box {
+            img {
+                width: 4vw;
+                padding: 1rem 0 0.5rem 0;
+            }
+            p {
+                padding: 0.3rem;
+                font-size: .8rem;
+            }
+        }
+    }
+    body .secondSlide {
+        background-size: 135vw 105vw;
+        background-position: -115px 0;
+
+        .container .right-side {
+            font-size: .8rem;
+        }
+        .container .about-text .left-side {
+            justify-content: end;
+            p span {
+                font-size: calc(12px + 1.4vmin);
+            }
+        }
+    }
+    body .thirdSlide {
+        padding: 3vh 0;
+
+        .container {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            h2 {
+                width: fit-content;
+            }
+            .box-contents .box {
+                width: 23vw;
+
+                img {
+                    width: 4vw;
+                    padding: 1.6rem 1px 0.5rem 0;
+                }
+                p {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    body .fifthSlide {
+        justify-content: center;
+        max-width: initial;
+        padding: 1vh 4vw 6vh 4vw;
+        margin: 0;
+
+        .contact-info {
+            .contact-map {
+                margin-top: 10vh;
+                width: 47%;
+            }
+            .right-side {
+                width: 47%;
+                text-align: left;
             }
         }
     }

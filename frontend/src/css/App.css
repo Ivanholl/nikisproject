@@ -105,73 +105,6 @@ body .firstSlide .box:active:before {
   }
 }
 /* Bounce To Bottom */
-@media (min-width: 1280px) and (max-width: 1600px) {
-  body .thirdSlide .box-contents .box {
-    width: 20vw;
-  }
-}
-@media (min-width: 960px) and (max-width: 1280px) {
-  body .App-header {
-    padding: 2vw 5vw;
-  }
-  body .App-header .App-logo {
-    margin: 1vh 0;
-    height: 5vmin;
-  }
-  body .App-header .nav {
-    padding: 0.2rem;
-  }
-
-  body .box-contents {
-    margin: 2vw 10vw;
-  }
-
-  body .firstSlide {
-    background-size: initial;
-  }
-  body .firstSlide h1 {
-    font-size: calc(14px + 1vmin);
-    line-height: calc(16px + 2vmin);
-    margin: 0 0 7vw;
-    padding: 0 38vw 0 10vw;
-  }
-  body .firstSlide .box {
-    width: 21vw;
-    margin-bottom: 1rem;
-  }
-  body .firstSlide .box p {
-    padding: 0.3rem;
-    margin: 0;
-  }
-  body .firstSlide .box img {
-    padding: 2rem 0rem 0rem;
-  }
-
-  body .secondSlide {
-    padding: 3vw 0;
-  }
-  body .secondSlide .container {
-    max-width: 90vw;
-    height: 87%;
-  }
-  body .secondSlide .container .about-text {
-    height: 100%;
-  }
-  body .secondSlide .container .about-text .left-side {
-    justify-content: center;
-  }
-  body .secondSlide .container .right-side {
-    width: 50%;
-    margin-top: -6vw;
-  }
-
-  body .thirdSlide .box-contents {
-    padding-top: 5vw;
-  }
-  body .thirdSlide .box-contents .box {
-    width: 21.2vw;
-  }
-}
 body {
   background-color: #030a2b !important;
   transition: 0.6s;
@@ -256,14 +189,17 @@ a:active, a:focus, a:hover {
   cursor: pointer;
 }
 
-.firstSlide {
+.content-slide {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: 100vh;
   width: 100vw;
+}
+
+.firstSlide {
   justify-content: flex-end;
-  -webkit-justify-content: flex-end;
-  background: url("/static/media/slide1-background.cb365d83.png") no-repeat;
+  background: url("../images/slide1-background.png") no-repeat;
   background-position: center;
   background-size: 100vw;
   background-attachment: fixed;
@@ -278,12 +214,6 @@ a:active, a:focus, a:hover {
 }
 
 .secondSlide {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  -webkit-justify-content: flex-start;
-  height: 100vh;
-  width: 100vw;
   background: url("../images/SecondSlideBackground.png") no-repeat;
   background-size: 100vw;
   padding: 1vw 0;
@@ -324,12 +254,6 @@ a:active, a:focus, a:hover {
 }
 
 .thirdSlide {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  justify-content: flex-start;
-  -webkit-justify-content: flex-start;
   background: #030a2b;
   padding: 10vh 0;
 }
@@ -342,12 +266,6 @@ a:active, a:focus, a:hover {
 }
 
 .fourthSlide {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  width: 100vw;
-  justify-content: flex-start;
-  -webkit-justify-content: flex-start;
   background: url("../images/FourthSlideBackground.png") no-repeat;
   background-position: bottom;
   background-size: 100vw;

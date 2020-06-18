@@ -2,10 +2,10 @@ import React from 'react';
 import {Container} from 'react-bootstrap';
 
 export default function SecondSlide() {
-    return (<div id="about" className="secondSlide">
+    return (<div id="about" className="secondSlide content-slide">
         <Container>
             <h2>ЗА
-                <span>НАС</span>
+                <span> НАС</span>
             </h2>
         </Container>
         <Container className="second-container">

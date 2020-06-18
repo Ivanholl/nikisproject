@@ -8,7 +8,7 @@ export default function FifthSlide() {
     const [adress] = useState(dummyAdress)
 
     return (
-        <Container id="contacts" className="fifthSlide">
+        <Container id="contacts" className="fifthSlide content-slide">
             <div className="contact-title">
                 <h2>КОНТАКТИ</h2>
             </div>

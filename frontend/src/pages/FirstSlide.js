@@ -25,7 +25,7 @@ export default function FirstSlide() {
     }])
 
     return (
-        <div className="firstSlide" >
+        <div className="firstSlide content-slide" >
                 <h1>ВИНАГИ ДАВАЙ НА СВЕТА И ХОРАТА ОКОЛО ТЕБ НАЙ-ДОБРОТО, КОЕТО МОЖЕШ И ИМАШ...ВЪПРЕКИ ВСИЧКО!</h1>
                 <div className="box-contents">
                 {
