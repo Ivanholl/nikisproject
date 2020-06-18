@@ -1,0 +1,80 @@
+$mediaAverageScreen: 1600px;
+$mediaDesktop: 1280px;
+$mediaTablet: 960px;
+$mediaMobile: 480px;
+
+
+@media (min-width: $mediaDesktop) and (max-width: $mediaAverageScreen) {
+    body .thirdSlide .box-contents .box {
+        width: 20vw;
+    }
+}
+
+@media (min-width: $mediaTablet) and (max-width: $mediaDesktop) {
+    body .App-header {
+        padding: 2vw 5vw;
+
+        .App-logo {
+            margin: 1vh 0;
+            height: 5vmin;
+        }
+        .nav {
+            padding: 0.2rem;
+        }
+    }
+    body .box-contents {
+        margin: 2vw 10vw;
+    }
+    body .firstSlide {
+        background-size: initial;
+
+        h1 {
+            font-size: calc(14px + 1vmin);
+            line-height: calc(16px + 2vmin);
+            margin: 0 0 7vw;
+            padding: 0 38vw 0 10vw;
+        }
+        .box {
+            width: 21vw;
+            margin-bottom: 1rem;
+            p {
+                padding: 0.3rem;
+                margin: 0;
+            }
+            img {
+                padding: 2rem 0rem 0rem;
+            }
+        }
+    }
+
+    body .secondSlide {
+        padding: 3vw 0;
+
+        .container{
+            max-width: 90vw;
+            height: 87%;
+
+            .about-text {
+                height: 100%;
+
+                .left-side {
+                    justify-content: center;
+                }
+            }
+            .right-side {
+                width: 50%;
+                margin-top: -6vw;
+            }
+        }
+    }
+
+    body .thirdSlide {
+        .box-contents {
+            padding-top: 5vw;
+            .box {
+                // width: 23vw;
+                width: 21.2vw;
+            }
+        }
+    }
+}
