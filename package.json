@@ -8,7 +8,7 @@
 },
   "scripts": {
     "test": "cd frontend && react-scripts test",
-    "start": "cd frontend && npm run build && serve -s build",
+    "start": "cd frontend && npm run build && npm run start",
     "build": "cd frontend && npm run build",
     "eject": "cd frontend && npm run eject"
   },
