@@ -6,8 +6,8 @@
   "scripts": {
     "test": "cd frontend && react-scripts test",
     "start": "npm run build && serve -s build",
-    "build": "cd frontend && npm run  build",
-    "eject": "cd frontend && npm run  eject"
+    "build": "cd frontend && npm run build",
+    "eject": "cd frontend && npm run eject"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   "homepage": "https://github.com/Ivanholl/nikisproject#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-scripts": "^3.4.1",
+    "serve": "^11.3.2"
   }
 }
