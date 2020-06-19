@@ -5,7 +5,7 @@
   "main": "./frontend",
   "scripts": {
     "test": "cd frontend echo react-scripts test",
-    "start": "cd frontend echo react-scripts start",
+    "start": "node index.js",
     "build": "cd frontend echo react-scripts build",
     "eject": "cd frontend echo react-scripts eject"
   },
