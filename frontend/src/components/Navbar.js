@@ -1,10 +1,12 @@
 ﻿import React from 'react';
 import { Nav } from 'react-bootstrap';
+import { slide as Menu } from 'react-burger-menu'
 
 import logo from '../images/Logo-proakt.png';
 
 export default function Navbar(props) {
     function handleClick(num) {
+        debugger
         props.setBoxToShow(num)
     }
     return (<header className="App-header">
@@ -32,6 +34,12 @@ export default function Navbar(props) {
             <div className="lang">
                 <p><a href="#">BG</a></p>
             </div>
-            </Nav>
+        </Nav>
+        <Menu right={'right'} fallDown={'fallDown'}>
+            <a onClick={() => handleClick(1)} className="menu-item" href="#about">За Нас</a>
+            <a onClick={() => handleClick(2)} className="menu-item" href="#services">Услуги</a>
+            <a onClick={() => handleClick(3)} className="menu-item" href="#jobs">Кариери</a>
+            <a onClick={() => handleClick(4)} className="menu-item" href="#contacts">Контакти</a>
+        </Menu>
     </header>);
 }

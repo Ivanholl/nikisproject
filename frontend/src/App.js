@@ -2,7 +2,6 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
-import './css/animations.css'
 
 import Layout from './pages/Layout';
 

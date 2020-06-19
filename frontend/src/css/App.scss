@@ -1,10 +1,11 @@
-// @import './animations';
+@import './animations';
 @import './queries';
+@import './burger';
 
 body {
     background-color: #030a2b !important;
     transition: 0.6s;
-
+ 
     h2 {
         color: #fff;
         border-bottom: 3px solid #0fb6b7;
@@ -36,7 +37,6 @@ body {
         &:focus {
             outline: none;
         }
-
         img {
             -webkit-animation: mover 0.8s infinite alternate;
             animation: mover 0.8s infinite alternate;
@@ -62,6 +62,10 @@ body {
     left: 0;
     z-index: 9;
 
+    .bm-burger-button  {
+        display: none;
+    }
+
     .App-logo {
         height: 6vmin;
         pointer-events: none;
@@ -69,6 +73,9 @@ body {
     }
     .nav {
         padding: 1rem;
+        position: relative;
+
+
 
         .main-menu {
             display: flex;
