@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import ContactForm from '../components/ContactForm';
 import MapComponent from '../components/MapComponent';
 
-export default function FifthSlide() {
+export default function FifthSlide(props) {
     const [adress] = useState(dummyAdress)
 
     return (
@@ -14,19 +14,21 @@ export default function FifthSlide() {
             </div>
             <div className="contact-info">
                 <div className="contact-map">
-                    <div className="left-side">
-                        <div className="adress">
-                            <p>{`${adress.city} ${adress.zip}`}</p>
-                            <p>{`${adress.str} ${adress.number}`}</p>
-                            <p>{`${adress.building} ${adress.floor}`}</p>
+                    {props.animate &&
+                        <div className="left-side animated bounceInRight">
+                            <div className="adress">
+                                <p>{`${adress.city} ${adress.zip}`}</p>
+                                <p>{`${adress.str} ${adress.number}`}</p>
+                                <p>{`${adress.building} ${adress.floor}`}</p>
+                            </div>
+                            <div className="phones">
+                                <h3>{"\u00a0"}</h3>
+                                <p>{adress.phoneOne}</p>
+                                <p>{adress.phoneTwo}</p>
+                                <p>{adress.phoneThree}</p>
+                            </div>
                         </div>
-                        <div className="phones">
-                            <h3>{"\u00a0"}</h3>
-                            <p>{adress.phoneOne}</p>
-                            <p>{adress.phoneTwo}</p>
-                            <p>{adress.phoneThree}</p>
-                        </div>
-                    </div>
+                    }
                     <div className="map-component">
                     <p>ПОКАЖИ НА КАРТАТА</p>
                     <MapComponent
@@ -38,9 +40,11 @@ export default function FifthSlide() {
                         />
                         </div>
                     </div>
-                <div className="right-side">
-                    <ContactForm />
-                </div>
+                {props.animate &&
+                    <div className="right-side animated bounceInLeft">
+                        <ContactForm />
+                    </div>
+                }
             </div>
         </Container >
     );

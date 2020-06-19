@@ -10,11 +10,11 @@ export default function SecondSlide() {
         </Container>
         <Container className="second-container">
             <div className="about-text">
-                <div className="left-side">
+                <div className="left-side animated bounceInRight">
                     <p>Ние ви предлагаме<span>Новаторски и оригинални бизнес решения, които дават редица предимства при формиране на конкурентноспособност.</span>
                     </p>
                 </div>
-                <div className="right-side">
+                <div className={`right-side animated bounceInLeft  `}>
                     <p>
                         <strong>ПроАкт Акаунтинг енд Файненс ЕООД </strong>
                         е една от утвърдилите се компании в България, предоставяща външни услуги в областта на фирмено управление, финансово-счетоводни услуги, подбор и управление на персонал, правни и данъчни консултации. Компанията осигурява новаторски и оригинални бизнес решения, които дават на клиентите редица предимства при формиране на тяхната конкурентноспособност.</p>

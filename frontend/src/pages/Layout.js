@@ -8,23 +8,27 @@ import FourthSlide from './FourthSlide';
 import FifthSlide from './FifthSlide';
 
 export default function Layout() {
-    // const { height, width } = useWindowDimensions();
+    const [boxToShow, setBoxToShow] = useState(0);
 
-    return (<FullPage initialSlide={0} duration={1000}>
+    return (<FullPage
+            initialSlide={0}
+            duration={300}
+            afterChange={args => setBoxToShow(args.to)}
+            >
         <Slide>
-            <FirstSlide/>
+            {boxToShow == 0 && <FirstSlide />}
         </Slide>
         <Slide>
-            <SecondSlide/>
+            {boxToShow == 1 && <SecondSlide/>}
         </Slide>
         <Slide>
-            <ThirdSlide/>
+            {boxToShow == 2 && <ThirdSlide/>}
         </Slide>
         <Slide>
-            <FourthSlide/>
+            {boxToShow == 3 && <FourthSlide/>}
         </Slide>
         <Slide>
-            <FifthSlide/>
+            <FifthSlide animate={boxToShow == 4} />
         </Slide>
     </FullPage>)
 }

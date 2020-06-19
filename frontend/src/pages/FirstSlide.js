@@ -1,21 +1,16 @@
-﻿import React, { useState  } from 'react';
-
+import React, { useState} from 'react';
 import InfoBox from '../components/InfoBox.js';
 
 export default function FirstSlide() {
     const [infos] = useState(inforArr)
 
-    // useEffect(() => {
-    //     let height = document.getElementById('firstSlide').clientHeight;
-    //     alert(height);
-    // }, [])
     return (
-        <div id="firstSlide" className="firstSlide content-slide" >
+        <div id="firstSlide" className='firstSlide content-slide' >
                 <h1>ВИНАГИ ДАВАЙ НА СВЕТА И ХОРАТА ОКОЛО ТЕБ НАЙ-ДОБРОТО, КОЕТО МОЖЕШ И ИМАШ...ВЪПРЕКИ ВСИЧКО!</h1>
                 <div className="box-contents">
                 {
                     infos.map((item, index) => {
-                        return (<InfoBox key={index} image={item.image} text={item.text} />)
+                        return (<InfoBox key={index} image={item.image} text={item.text} timer={(index + 1) * 100} />)
                     })
                 }
                 </div>
@@ -23,6 +18,8 @@ export default function FirstSlide() {
     );
 
 }
+
+
 
 const inforArr = [{
     image: 'Accounting _icon1.png',
