@@ -1,0 +1,26 @@
+{
+  "name": "niki",
+  "version": "1.0.0",
+  "description": "nikisproject",
+  "main": "./frontend",
+  "scripts": {
+    "test": "cd frontend echo react-scripts test",
+    "start": "cd frontend echo react-scripts start",
+    "build": "cd frontend echo react-scripts build",
+    "eject": "cd frontend echo react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivanholl/nikisproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivanholl/nikisproject/issues"
+  },
+  "homepage": "https://github.com/Ivanholl/nikisproject#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
