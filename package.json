@@ -4,10 +4,10 @@
   "description": "nikisproject",
   "main": "./frontend",
   "scripts": {
-    "test": "cd frontend echo react-scripts test",
-    "start": "node index.js",
-    "build": "cd frontend echo react-scripts build",
-    "eject": "cd frontend echo react-scripts eject"
+    "test": "cd frontend && react-scripts test",
+    "start": "npm run build && serve -s build",
+    "build": "cd frontend && npm run  build",
+    "eject": "cd frontend && npm run  eject"
   },
   "repository": {
     "type": "git",
