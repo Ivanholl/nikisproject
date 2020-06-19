@@ -10,7 +10,7 @@ export default function BackToTopBtn() {
             speed={1200}
             easing="easeInOutQuint"
         >
-            <img src={BackToTopBtnImg} />
+            <img src={BackToTopBtnImg} alt="back to top"/>
         </BackToTop>
     )
 }
