@@ -7,51 +7,36 @@ import ThirdSlide from './ThirdSlide';
 import FourthSlide from './FourthSlide';
 import FifthSlide from './FifthSlide';
 
-export default function Layout() {
+import Navbar from '../components/Navbar';
+import BackToTopBtn from '../components/BackToTopBtn';
+
+export default function Layout(props) {
     const [boxToShow, setBoxToShow] = useState(0);
 
-    return (<FullPage
+    return (<>
+        <Navbar setBoxToShow={id => setBoxToShow(id)}/>
+        <FullPage
             initialSlide={0}
             duration={300}
             afterChange={args => setBoxToShow(args.to)}
             >
-        <Slide>
+        <Slide style={{width: '100%'}}>
             {boxToShow == 0 && <FirstSlide />}
         </Slide>
-        <Slide>
+        <Slide style={{width: '100%'}}>
             {boxToShow == 1 && <SecondSlide/>}
         </Slide>
-        <Slide>
+        <Slide style={{width: '100%'}}>
             {boxToShow == 2 && <ThirdSlide/>}
         </Slide>
-        <Slide>
+        <Slide style={{width: '100%'}}>
             {boxToShow == 3 && <FourthSlide/>}
         </Slide>
-        <Slide>
+        <Slide style={{width: '100%'}}>
             <FifthSlide animate={boxToShow == 4} />
         </Slide>
-    </FullPage>)
+    </FullPage>
+    <BackToTopBtn setBoxToShow={id => setBoxToShow(id)}/>
+
+    </>)
 }
-//
-// function getWindowDimensions() {
-//   const { innerWidth: width, innerHeight: height } = window;
-//   return {
-//     width,
-//     height
-//   };
-// }
-//
-// function useWindowDimensions() {
-//   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-//
-//   useEffect(() => {
-//     function handleResize() {
-//       setWindowDimensions(getWindowDimensions());
-//     }
-//
-//     window.addEventListener('resize', handleResize);
-//     return () => window.removeEventListener('resize', handleResize);
-//   }, []);
-//
-//   return windowDimensions;
-// }

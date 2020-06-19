@@ -14,8 +14,7 @@ export default function FifthSlide(props) {
             </div>
             <div className="contact-info">
                 <div className="contact-map">
-                    {props.animate &&
-                        <div className="left-side animated bounceInRight">
+                        <div className="left-side ">
                             <div className="adress">
                                 <p>{`${adress.city} ${adress.zip}`}</p>
                                 <p>{`${adress.str} ${adress.number}`}</p>
@@ -28,7 +27,6 @@ export default function FifthSlide(props) {
                                 <p>{adress.phoneThree}</p>
                             </div>
                         </div>
-                    }
                     <div className="map-component">
                     <p>ПОКАЖИ НА КАРТАТА</p>
                     <MapComponent
@@ -40,11 +38,9 @@ export default function FifthSlide(props) {
                         />
                         </div>
                     </div>
-                {props.animate &&
-                    <div className="right-side animated bounceInLeft">
+                    <div className="right-side">
                         <ContactForm />
                     </div>
-                }
             </div>
         </Container >
     );
